@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form builder</title>
+        <style>
+            .title {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+                padding-right: 200px;
+                margin-top: 7px;
+                margin-bottom: 10px;
+                background-color: rgb(222, 215, 252);
+                border: none;
+                border-radius: 5px;
+            }
+            input, textarea, button {
+                
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 100px;
+                margin-top: 7px;
+                margin-bottom: 10px;
+                background-color: rgb(222, 215, 252);
+                border: none;
+                border-radius: 5px;
+                display: block;
+                
+            }
+            .firstname {
+                background-color: rgb(229, 225, 244);
+
+            }
+            .verify {
+                width: 150px;
+                display: block;
+            }
+            .submit {
+                background-color: rgba(77, 77, 249, 0.671);
+                padding-right: 80px;
+                color: white;
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+            .asterick {
+                color: goldenrod;
+            }
+        </style>
+
+    </head>
+    <body>
+
+      <h1>Medicine Symposium Registration Form</h1>  
+        <b>Full name</b>
+        <form action="">
+            <select name="title" id="" class="title">
+        <option value="">Title</option>
+        <option value="men">Mr.</option>
+        <option value="women">Mrs.</option>
+        <option value="miss">Miss.</option>
+        <option value="mister">Mister.</option>
+        </select>
+        <input type="text" placeholder="First" class="firstname">
+        <input type="text" placeholder="Last" class="lastname">
+        <b>Institution</b>
+        <input type="text">
+        <b>Email address</b>
+        <input type="text">
+        <b>Note to the organizers</b>
+        <textarea name="" id="" cols="19" rows="4"></textarea>
+        <b>Verification<span class="asterick">*</span></b>
+        <img  class="verify"src="data:image/png;base64,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" alt="">
+        <button class="submit">SUBMIT FORM</button>  
+          
+    </form>
+    </body>
+</html>
